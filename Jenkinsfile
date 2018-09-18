@@ -5,24 +5,27 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
-                bat "mvn clean compile" 
-                
+                withMaven(maven : 'Apache Maven 3.5.4') {
+                    sh 'mvn clean compile'
+                }
             }
         }
 
         stage ('Testing Stage') {
 
             steps {
-                bat "mvn test"
-                
+                withMaven(maven : 'Apache Maven 3.5.4') {
+                    sh 'mvn test'
+                }
             }
         }
 
 
         stage ('Deployment Stage') {
             steps {
-                bat "mvn deploy"
-                
+                withMaven(maven : 'Apache Maven 3.5.4') {
+                    sh 'mvn deploy'
+                }
             }
         }
     }
