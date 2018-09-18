@@ -58,7 +58,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			
-			        <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
@@ -69,7 +68,6 @@
                     <executable>C:\Program Files\Java\jdk1.8.0_161\bin\javac</executable>
                 </configuration>
             </plugin>
-        </plugins>
 
 		</plugins>
 		
