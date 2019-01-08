@@ -19,6 +19,9 @@ pipeline {
                 }
             }
         }
+        stage('email'){
+        emailext body: 'hi from jenrkins ', subject: 'test', to: 'bharatdarawade1134@gmail.com'
+        }
 
 
         
